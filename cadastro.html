@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>JFK</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h2>JFK</h2></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link" href="./pacotes.html">Pacotes</a>
+                  <a class="nav-link" href="./contato.html">Contato</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Login -->
+    <section class="full-view-height">
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="mt-5 mb-5">
+                <legend><h1>Cadastro de novo usuário</h1></legend>
+                <!-- Nome -->
+                <div class="form-group d-flex flex-column">
+                  <label for="username" class="font-weight-bold">Nome completo:</label>
+                  <input type="text" name="nome" placeholder="Digite seu nome completo" id="nome" class="form-control" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group d-flex flex-column">
+                  <label for="email" class="font-weight-bold">E-mail:</label>
+                  <input type="email" name="email" placeholder="Digite seu e-mail" id="email" class="form-control" required>
+                </div>
+
+                <!-- Data de nascimento -->
+                <div class="form-group d-flex flex-column">
+                  <label for="birth" class="font-weight-bold">Data de nascimento:</label>
+                  <input type="date" name="birth" id="birth" class="form-control" max="2023-10-26" required>
+                </div>
+
+                <!-- Estado -->
+                <div class="form-group d-flex flex-column">
+                  <label for="estado" class="font-weight-bold">Estado:</label>
+                  <select class="form-control" id="estado" required>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+
+                <!-- Endereço -->
+                <div class="form-group d-flex flex-column">
+                  <label for="email" class="font-weight-bold">Endereço:</label>
+                  <input type="text" name="endereco" placeholder="Digite seu endereço" id="endereco" class="form-control" required>
+                </div>
+
+                <!-- Sexo -->
+                <div class="form-group">
+                    <label class="font-weight-bold">Sexo:</label>
+                    <div>
+                      <input type="radio" name="sexo" value="M">
+                      <label>Masculino</label>
+                      <input type="radio" name="sexo" value="F">
+                      <label>Feminino</label>
+                  </div>
+                </div>
+
+                <!-- Interesses -->
+                <div class="form-group d-flex flex-column">
+                  <label for="cat-interesse" class="font-weight-bold">Categorias de interesse:</label>
+                  <div class="d-flex justify-content-between">
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="praia">Praia
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="campo">Campo
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="nacional">Nacionais
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="internacional">Internacionais
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="serra">Serra
+                      <input type="checkbox" name="cat-interesse" id="cat-interesse" value="cidade">Cidade
+                  </div>
+                </div>
+
+                <!-- Login -->
+                <div class="form-group d-flex flex-column">
+                  <label for="email" class="font-weight-bold">Login:</label>
+                  <input type="text" name="email" placeholder="Digite um usuario" id="login" class="form-control" minlength="5" required>
+                </div>
+
+                <!-- Senha -->
+                <div class="form-group d-flex flex-column">
+                  <label for="password" class="font-weight-bold">Senha:</label>
+                  <input type="password" name="senha" placeholder="Digite uma senha" id="password" class="form-control" minlength="8" required>
+                </div>
+
+                <!-- Botões -->
+                <div class="form-group">
+                    <input type="reset" name="Limpar" class="btn btn-danger" value="Limpar">
+                    <button type="submit" name="Salvar" class="btn btn-danger" value="Salvar"><a href="./info_pagamento.html">Salvar</a></button>
+                </div>
+              </form>
+        </div>
+
+    </section>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p> JFK 2023</p>
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

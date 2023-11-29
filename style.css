@@ -1,0 +1,184 @@
+:root {
+    --main_color: #222333;
+    --text-light: #ffffff;
+    --cream: rgba(241, 241, 241, 0.749)
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--text-light) !important;
+}
+
+button {
+    color: var(--text-light);
+}
+
+nav {
+    background-color: var(--main_color);
+    color: var(--text-light);
+}
+
+.navbar-brand>h2 {
+    margin: 0;
+}
+
+.pacotes {
+    background-image: url(./Imagens/background.jpg);
+    background-size: cover;
+}
+
+.in-progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80vw;
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 5rem;
+}
+
+.black {
+    height: 2rem;
+    background-color: var(--main_color);
+}
+
+.carousel-item>img {
+    height: 80vh;
+    object-fit:cover;
+}
+
+.pacotes>.container-fluid {
+    padding: 40px 30px;
+    max-width: 80vw;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+.pacotes>.container-fluid>h2 {
+    color: var(--text-light);
+}
+
+.card {
+    margin: 10px 0;
+    border-radius: 1rem;
+}
+
+.card-img-top {
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* height: 6rem; */
+    background-color: var(--cream);
+}
+
+.content {
+    display: flex;
+    width: 80vw;
+}
+
+.content>img {
+    max-width: 50%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: var(--main_color);
+    color: var(--text-light);
+}
+
+.map {
+    width: 100%;
+    height: 15rem;
+}
+
+.bg-airplane {
+        background-image: url(./Imagens/background.jpg);
+        background-size: cover;
+}
+
+.full-view-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.spaced-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.credit-card-info, 
+#boleto-option, 
+#pix-option {
+    border: 1px solid #A0A0A0;
+    border-radius: 1px;
+    padding: 1rem 0 1rem 0;
+}
+
+.info-pagamento {
+    width: 60%;
+}
+
+.pagamento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.aprovado {
+    border: 1px solid black;
+}
+
+.login-pagamento {
+    width: 30%;
+}
+
+.forgot-pass {
+    text-decoration: underline !important;
+}
+
+.finalizar {
+    height: 100%;
+}
+
+#validade_cartao, #CVV, #cupom, #parcelas{
+    width: 50%;
+}
+
+footer>p {
+    margin: 0;
+}
+
+.nav-link:hover {
+    box-shadow: 0px 2px 0px -0px rgb(0, 180, 255);
+}

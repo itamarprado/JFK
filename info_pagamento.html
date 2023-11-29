@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>JFK</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h2>JFK</h2></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  <a class="nav-link" href="./pacotes.html">Pacotes</a>
+                  <a class="nav-link" href="./contato.html">Contato</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    <section class="full-view-height gradient">
+        <h1 class="mb-5">INFORMAÇÕES DE PAGAMENTO</h1>
+        <div class="d-flex spaced-container justify-content-between">
+            <div class="info-pagamento">
+                <h2>Selecione uma forma de pagamento</h2>
+                <form class="pagamento">
+                    <div class="form-group d-flex flex-column mb-0">
+                        <label for="boleto" class="font-weight-bold px-2" id="boleto-option">
+                            <input type="radio" name="pagamento" value="boleto" id="boleto" checked> Boleto
+                        </label>
+                        <label for="pix" class="font-weight-bold px-2" id="pix-option">
+                            <input type="radio" name="pagamento" value="pix" id="pix"> PIX
+                        </label>
+                        
+                    </div>
+                    <div class="form-group mt-0 mb-0 d-flex flex-column credit-card-info px-2">
+                        <label for="cartao_credito" class="font-weight-bold">
+                            <input type="radio" name="pagamento" value="cartao_credito"> Cartão de Crédito
+                        </label>
+                        
+                        <div class="mx-3">
+                            <input type="number" class="form-control" placeholder="Número do Cartão" id="numero_cartao" required>
+                            <input type="text" class="form-control mt-2" placeholder="Nome do Titular do Cartão" id="titular_cartao" required>
+                            <span class="d-flex mt-2">
+                                <input type="month" class="form-control mr-1" id="validade_cartao" required>
+                                <input type="number" class="form-control" placeholder="CVV" id="CVV" required>
+                            </span>
+                            <input type="number" class="form-control mt-2" placeholder="CPF" id="CPF" required>
+                            <span class="d-flex mt-2">
+                                <select class="form-control mr-1" id="parcelas">
+                                    <option>1x de R$1000,00</option>
+                                    <option>2x de R$500,00</option>
+                                    <option>3x de R$333,34</option>
+                                    <option>4x de R$250,00</option>
+                                    <option>5x de R$200,00</option>
+                                    <option>6x de R$166,67</option>
+                                    <option>7x de R$142,85</option>
+                                    <option>8x de R$125,00</option>
+                                    <option>9x de R$111,12</option>
+                                    <option>10x de R$100,00</option>
+                                    <option>11x de R$90,91</option>
+                                    <option>12x de R$83,34</option>
+                                </select>
+                                <input type="text" placeholder="Cupom" class="form-control" id="cupom">
+                            </span>
+                            <h4 class="mb-0 mt-2">Valor Final: R$1000,00</h4>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="d-flex flex-column login-pagamento">
+                <h2>Faça seu login</h2>
+                <form>
+                    <div class="form-group d-flex flex-column">
+                      <label for="username" class="font-weight-bold">Login:</label>
+                      <input type="text" name="user" placeholder="Digite seu usuário" id="username" class="form-control">
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                      <label for="password" class="font-weight-bold">Senha:</label>
+                      <input type="password" name="password" placeholder="Digite sua senha" id="password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-danger">Entrar</button>
+                      <a href="./cadastro.html" class="btn btn-danger">Criar conta</a>
+                    </div>
+                    <a href="#" class="text-dark forgot-pass">Esqueceu sua senha ?</a>
+                </form>
+
+                <div class="finalizar d-flex flex-column justify-content-center">
+                    <p>Prossiga para finalizar sua compra</p>
+                    <a href="./fim_compra.html">
+                        <button class="btn btn-success font-weight-bold text-dark border-dark">Confirmar Pagamento</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p> JFK 2023</p>
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
